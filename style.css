@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: auto;
+    background-color: white;
+    width: 900px;
+    height: 100vh;
+}
+
+header {
+
+    background-color: yellowgreen;
+
+}
+
+.logo {
+
+    width: 115px;
+}
+
+nav {
+
+    padding-bottom: 10px;
+}
+
+.menu-header {
+
+    display: inline-block;
+    padding: 7px;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.menu-header:hover {
+
+    background-color: pink;
+    transition: 2s;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+.sessao1, .sessao2, .sessao3 {
+
+    border: 2px black solid;
+    width: 400px;
+    height: 110px;
+    display: inline-block;
+    margin: 10px;
+
+}
+
+main {
+
+    background-color: brown;
+    width: 900px;
+    text-align: center;
+}
+
+footer {
+
+    margin: auto;
+    background-color: rgba(231, 213, 153, 0.895);
+    height: 300px;
+}
+
+ h2 {
+
+    text-align: center;
+    padding-top: 15%;
+}
+
+
+.rede-social {
+
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: end;
+    gap: 15px;
+}
+
+
+.lista-redes {
+
+    list-style: none;
+    
+}
+
+.img-redes {
+
+    display: inline;
+    padding: 5px;
+    width: 55px;
+    margin-top: 75px;
+}
