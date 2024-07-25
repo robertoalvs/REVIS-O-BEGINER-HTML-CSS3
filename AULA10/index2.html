@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #res {
+
+            width: 250px;
+            height: 200px;
+            
+            text-align: center;
+            font-weight: bold;
+            font-size: 1em;
+            border-radius: 10px;
+            background-color: red;
+            padding: 15px;
+            margin: auto;
+
+        }
+
+        input {
+
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        p {
+
+            color: white;
+            text-align: justify;
+            padding: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        
+        }
+
+        strong {
+
+            font-size: 2em;
+            color: blue;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+        <h1>Somando valores</h1>
+        <input type="number" name="txt1" id="num">
+        <input type="number" name="txt2" id="num2">
+        <input type="button" value="SOMAR" onclick="somar()">
+
+        <div id="res">RESULTADO:</div>
+
+        <script>
+
+            function somar() {
+
+                let txt1 = document.getElementById('num')
+                let txt2 = document.getElementById('num2')
+                let resposta = document.getElementById('res')
+
+                let n1 = Number(txt1.value)
+                let n2 = Number(txt2.value)
+
+                let soma = n1 + n2
+                //resposta.style.width = '300px'
+                //resposta.style.height = '200px'
+                //resposta.style.lineHeight = '200px'
+                //resposta.style.backgroundColor = 'red'
+                resposta.innerHTML = `<p>A soma entre ${n1} + ${n2} é igual aaaaaaaaaaaaaaaaaaa <strong>${soma}</strong> </p>`
+            }
+        </script>
+</body>
+</html>
