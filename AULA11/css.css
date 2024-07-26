@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+
+text-align: center;
+margin: 20px 0 25px 0;
+}
+
+
+form {
+
+text-align: center;
+
+}
+
+input {
+
+width: 170px;
+margin: auto;
+border-radius: 5px;
+height: 25px;
+margin-top: 5px;
+}
+
+label {
+
+width: 170px;
+display: inline-block;
+text-align: right;
+padding: 3px 6px;
+vertical-align: top;
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.botao {
+
+margin-left: 174px;
+margin-top: 10px;
+}
+
+div {
+
+margin: auto;
+width: 500px;
+height: 500px;
+background-color: blanchedalmond;
+margin-top: 20px;
+border: 1px black solid;
+border-radius: 10px;
+padding: 20px;
+
