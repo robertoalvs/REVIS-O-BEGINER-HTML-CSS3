@@ -19,12 +19,26 @@ h1 {
 
 section {
 
-    background-color: white;
+    /* background-image: linear-gradient( blue, yellow); */
     border-radius: 10px;
     padding: 15px;
     width: 500px;
     margin: auto;
     box-shadow: 2px 2px 5px black;
+    color: beige;
+    font-size: 1.5em;
+}
+
+#msg {
+
+    text-align: center;
+    padding: 10px;
+}
+
+#img {
+
+    margin: auto;
+    display: block;
 }
 
 footer {
