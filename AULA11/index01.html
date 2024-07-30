@@ -6,34 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="../AULA11/css.css">
 
-    <style>
-
-           
-    </style>
+    
 </head>
 <body>
 
             <h1>Você é ou não Estrangeiro?</h1>
-        
-            <form action="" method="get" autocomplete="on">
 
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" placeholder=" nome" required autocomplete="name"> <br>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome"> <br>
+            <label for="ipais">Pais Atual: </label>
+            <input type="text" name="Pais" id="ipais"> <br>
+            <label for="ianoatual">Ano Atual: </label>
+            <input type="number" name="anoatual" id="ianoatual"><br>
+            <label for="inasc">Ano Nascimento: </label>
+            <input type="number" name="nasc" id="inasc">
+            <input type="button" value="VERIFICAR" onclick="verificar()">
 
-                <label for="inome">País: </label>
-                <input type="text" name="pais" id="ipais" placeholder=" pais" required autocomplete="country"> <br>
+            <div id="res">Resposta: </div>
+
             
-                <label for="inasc">Ano Nascimento: </label>
-                <input type="number" name="nasc" id="inasc" placeholder=" ano nascimento" required autocomplete="bday-year"> <br>
-            
-                <label for="iano"> Ano Atual: </label>
-                <input type="number" name="ano" id="iano" placeholder=" ano atual" required autocomplete="bday-day"> <br>
-
-                <input class="botao" type="button" value="VERIFICAR" onclick="clicar()">
-
-            </form>
-
-            <div id="res"> Resposta: </div>
 
     <script src="../AULA11/index01.js"></script>
 </body>
