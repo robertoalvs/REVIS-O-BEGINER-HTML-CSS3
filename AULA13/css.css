@@ -1,49 +1,68 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+
+:root {
+
+    --font-goole: "Ga Maamli";
+    --font-google1: "Calistoga"
+}
 
 * {
 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
+
 body {
 
     background-color: rgb(70, 142, 236);
+    
 }
 
-h1 {
+
+header > h1 {
 
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0px 20px 0px;
+    text-shadow: 1px 4px 1px white;
+    font-family: var(--font-goole);
+    font-size: 2.5em;
 }
 
-section {
+#sessao {
 
-    /* background-image: linear-gradient( blue, yellow); */
-    border-radius: 10px;
-    padding: 15px;
     width: 500px;
+    height: 450px;
+    background-image: linear-gradient(to top, orange, black, white); 
     margin: auto;
-    box-shadow: 2px 2px 5px black;
-    color: beige;
-    font-size: 1.5em;
-}
-
-#msg {
-
-    text-align: center;
     padding: 10px;
-}
-
-#img {
-
-    margin: auto;
-    display: block;
-}
-
-footer {
-
     text-align: center;
-    font-style: italic;
-    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+#relogio {
+
+    font-size: 2em;
+    font-family: var(--font-google1);
+    margin-top: 30px;
+}
+
+#imagem {
+
+    margin-top: 20px;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 50%;
+}
+
+#ano {
+
+    font-family: var(--font-google1);
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
 }

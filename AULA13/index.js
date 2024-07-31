@@ -1,25 +1,35 @@
-function carregar() {
+function verificar() {
 
-    let msg = document.getElementById('msg')
-    let img = document.getElementById('img')
-    let sec = document.getElementById('sec')
+
+    let relogio = document.getElementById('relogio')
+    let foto = document.getElementById('foto')
+    let imagem = document.getElementById('imagem')
+    let  = anoatual = document.getElementById('ano')
+    let sessao = document.getElementById('sessao')
 
     let data = new Date()
     let hora = data.getHours()
+    let ano = data.getFullYear()
 
-    msg.innerHTML = `Agora são ${hora} horas`
+    relogio.innerHTML = `Agora são: ${hora} Horas`
+    anoatual.innerHTML = `Estamos no ano de: ${ano} `
 
-    if(hora >= 0 && hora < 12) {
 
-        img.src = './img/manha.png'
+        if (hora >= 0 && hora <= 11) {
 
-    } else if (hora >= 12 && hora <= 18) {
+            imagem.src = './img/manha.png'
 
-        img.src ='./img/tarde.png'
-        sec.style.backgroundImage = 'linear-gradient( blue, yellow)'
+            sessao.style.backgroundImage = 'linear-gradient(to top, blue, yellow, white)'
 
-    } else {
+        } else if (hora >= 12 && hora < 18) {
 
-        img.src = './img/noite.png'
-    }
+            imagem.src = './img/tarde.png'
+
+            sessao.style.backgroundImage = 'linear-gradient(to top, orange, yellow, white)'
+
+        } else {
+
+            imagem.src = './img/noite.png'
+            sessao.style.backgroundImage = 'linear-gradient(to top, orange, black, white)'
+        }
 }

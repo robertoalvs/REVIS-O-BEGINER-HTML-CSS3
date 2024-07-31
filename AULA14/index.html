@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando JavaScript</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+
+    <header>
+        <h1>Testando interação HTML e JAVASCRIPT!</h1>
+    </header>
+
+    <form action="#" method="post">
+
+        <label for="inome">Nome: </label>
+        <input type="text" name="Nome" id="inome" autocomplete="name"> <br>
+
+        <label for="ipais">País Atual: </label>
+        <input type="text" name="pais" id="ipais" autocomplete="country"> <br>
+
+        <label for=" inasc ">Data Nascimento:</label>
+        <input type="number" name="nasc" id="inasc" autocomplete="bday-year"> <br>
+
+        <label for="ianotual">Ano Atual: </label>
+        <input type="number" name="anoatual" id="ianoatual" autocomplete="on"> <br>
+
+        <input class="botao" type="button" value="Consultar" onclick="consultar()">
+
+    </form>
+
+    <section id="sessao">
+
+        <div id="hora">Hora...</div>
+
+        <div id="foto">
+
+            <img id="imagem" src="./img/bebe-mulher.png" alt="FOTO DE PESSOAS">
+        </div>
+
+        <div id="ano">Ano Atual...</div>
+
+    </section>
+
+
+
+    <script src="./index.js"></script>
+
+
+</body>
+</html>
