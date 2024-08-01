@@ -43,7 +43,8 @@ label {
 
 .botao {
 
-    margin-left: 24%;
+    margin: auto;
+    display: block;
 }
 
 h1 {

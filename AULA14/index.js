@@ -15,7 +15,7 @@ function consultar() {
 
     let soma = n1 - n2
 
-    if (nome == 0 || pais.value == 0 || nasc == 0 || anoatual == 0) {
+    if (nome == 0 || pais == 0 || nasc == 0 || anoatual == 0) {
 
         alert('ERRO! PREENCHA OS TODOS OS CAMPOS!')
     }
