@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+
+    <style>
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background-color: rgb(103, 158, 240);
+        }
+
+        h1 {
+
+            text-align: center;
+            margin: 20px 0 20px 0;
+        }
+
+        #div-input {
+
+            margin: auto;
+            width: 500px;
+            height: 200px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        p {
+
+            margin-bottom: 10px;
+        }
+
+        .botao {
+
+            width: 100px;
+        }
+
+        #res {
+
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+
+            text-align: center;
+            text-transform: lowercase;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+            <header>
+                <h1>Verificardor</h1>
+            </header>
+
+            <section>
+
+                <div id="div-input">
+
+                    <p>Ano de Nascimento:
+                        <input type="number" name="txtano" id="txtano" min="0">
+                    </p>
+
+                    <p>Sexo:
+                        <input type="radio" name="radsex" id="masc" checked>
+                        <label for="mas">Masculino: </label>
+                        <input type="radio" name="radsex" id="fem">
+                        <label for="fem">Feminino: </label>
+                    </p>
+
+                    <p>
+                        <input class="botao" type="button" value="Verificar" onclick="verificar()">
+                    </p>
+
+                    <div id="res">
+                        Preencha os dados acima para ver o resultado!
+                    </div>
+
+                </div>
+
+                
+
+            </section>
+
+            <footer>&copy; Roberto Alves</footer>
+
+            <script src="../AULA15/index.js"></script>
+            
+</body>
+</html>

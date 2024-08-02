@@ -1,22 +1,41 @@
 function consultar() {
 
-    let nome = document.getElementById('inome')
-    let pais = document.getElementById('ipais')
-    let nasc = document.getElementById('inasc')
-    let anoatual = documtent.getElementById('ianoatual')
+    let data = new Date()
+    let ano = data.getFullYear()
+    let horario = data.getHours()
 
-    let sessao = document.getElementById('sessao')
-    let horaatual = document.getElementById('hora')
-    let imagem = document.getElementById('imagem')
-    let ano = document.getElementById('ano')
+    let txtnome = document.querySelector('input#txtnome')
+    let txtpais = document.querySelector('input#txtpais')
 
-    let n1 = Number(nasc.value)
-    let n2 = Number(anoatual.value)
+    let sessao = document.querySelector('secsion#sessao')
+    let imagem = document.querySelector('img#imagem')
 
-    let soma = n1 - n2
+    let hora = document.querySelector('div#hora')
+    let fullano = document.querySelector('div#fullano')
+    let foto = document.querySelector('div#foto')
+    let horaeano = document.querySelector('div#horaeano')
 
-    if (nome == 0 || pais == 0 || nasc == 0 || anoatual == 0) {
+    // No caso do uso do input radio, usaremos o ByName, por que todos os inputs radio, tem que está com o mesmo nome
+    let fsex = document.getElementsByName('radsex')
+    let genero = ''
 
-        alert('ERRO! PREENCHA OS TODOS OS CAMPOS!')
+    let numnasc = document.querySelector('input#numnasc')
+    let numano = document.querySelector('input#numano')
+    let n1 = Number(numnasc.value)
+    let n2 = Number(numano.value)
+
+    let soma = n2 - n1
+
+    
+
+    if (txtnome.value.length == 0 || txtpais.value.length == 0 || numnasc.value < 1900 || numano.value > ano) {
+
+           alert('ERRO!!! VERIFICAR OS DADOS DIGITADOS')
+
+    } else {
+
+        alert('TUDO OK')
     }
+    
+     
 }
