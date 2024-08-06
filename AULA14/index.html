@@ -6,7 +6,7 @@
     <title>Estudando JavaScript</title>
     <link rel="stylesheet" href="./css.css">
 </head>
-<body>
+<body onload="tempo()">
 
     <header>
         <h1>Testando interação HTML e JAVASCRIPT!</h1>
@@ -27,7 +27,7 @@
         <input class="inpt" type="number" name="anoatual" id="numano" autocomplete="on"> <br>
 
         <label for="masc">Masculino: </label>
-        <input type="radio" name="radsex" id="masc" checked> <br>
+        <input type="radio" name="radsex" id="masc" ><br>
         <label for="fem">Feminino: </label>
         <input type="radio" name="radsex" id="fem">
 
@@ -44,7 +44,8 @@
 
         <div id="fullano">Ano Atual...</div>
 
-        <div id="horaeano"> hora e ano...</div>
+        <div id="resultado"> res...</div>
+        <div id="res"> genero...</div>
 
     </section>
 
