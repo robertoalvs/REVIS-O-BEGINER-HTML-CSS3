@@ -46,7 +46,7 @@ function consultar() {
 
         genero = 'HOMEM'
 
-    }  if (soma < 12 ) {
+    }else  if (soma < 12 ) {
 
         imagem.src  = './img/bebe-homem.png'
 
@@ -64,13 +64,13 @@ function consultar() {
 
     } else if (soma >= 18 && soma < 60){
 
-        imagem.src  = './img/homem-adulto.png'
+        imagem.src  = './img/mulher-adulto.png'
 
         resultado.innerHTML = `Seu nome é: <strong>${txtnome}</strong> você está em <strong>${txtpais}</strong>`
 
         res.innerHTML = ` ${genero} com ${soma} anos`
 
-    } else {
+    } else if( soma >= 60){
 
         imagem.src  = './img/idosa-homem.png'
 
@@ -79,9 +79,44 @@ function consultar() {
         res.innerHTML = ` ${genero} com ${soma} anos`
 
 
+        /* ============== MULHER ======== */
 
+    }  else if (fsex[1].checked  = 'MULHER') {
 
+        genero = 'MULHER'
 
-    } 
+    } if (soma < 12) {
+
+        imagem.src  = './img/bebe-mulher.png'
+
+        resultado.innerHTML = `Seu nome é: <strong>${txtnome}</strong> você está em <strong>${txtpais}</strong>`
+
+        res.innerHTML = ` ${genero} com ${soma} anos `
+
+    } else if (soma >= 12 && soma < 18) {
+
+        imagem.src  = './img/crianca-mulher.png'
+
+        resultado.innerHTML = `Seu nome é: <strong>${txtnome}</strong> você está em <strong>${txtpais}</strong>`
+
+        res.innerHTML = ` ${genero} com ${soma} anos`
+
+    } else if (soma >=18 && soma < 60) {
+
+        imagem.src = './img/mulher-adulto.png'
+
+        resultado.innerHTML = ` Seu nome é: <strong>${txtnome}</strong> você está em <strong>${txtpais}</strong>
+        `
+        res.innerHTML = `${genero} com ${soma} anos`
+
+    } else {
+
+        imagem.src  = './img/idosa-mulher.png'
+
+        resultado.innerHTML = `Seu nome é: <strong>${txtnome}</strong> você está em <strong>${txtpais}</strong>`
+
+        res.innerHTML = ` ${genero} com ${soma} anos`
+
+    }
      
 }
