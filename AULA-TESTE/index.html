@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUA IDADE EM JAVSCRIPT</title>
+    <link rel="shortcut icon" href="../AULA-TESTE/img/manha.png" type="image/x-icon">
+    <link rel="stylesheet" href="../AULA-TESTE/index.css">
+</head>
+<body onload="tempo()">
+        <header>
+
+            <h1>Minha idade!</h1>
+
+        </header>
+
+        <main>
+
+            <section id="sessao1">
+
+                <form action="../AULA-TESTE/index.php" method="post">
+
+                    Nome: <input type="text" name="txtn" id="itxtn"> <br>
+                    Pais: <input type="text" name="txtp" id="itxtp"> <br>
+                    Data Nascimento: <input type="number" name="num" id="inum"> <br>
+                    Ano Atual: <input type="number" name="num1" id="inum1"> <br>
+
+                    Masculino:  <input type="radio" name="idsex" id="imasc">
+                    Feminino:   <input type="radio" name="idsex" id="ifem">
+
+                </form>
+
+                    <div id="sessao2">
+
+                        <div id="horas-atual"></div>
+
+                        <div id="imagem" >
+                            <img id="fotos" src="../AULA-TESTE/img/manha.png" alt="bebe-homem">
+
+                        </div>
+
+                        <div id="ano-atual"></div>
+                        <div id="res"></div>
+                        <div id="genero-masc-fem"></div>
+
+                    </div>
+
+            </section>
+
+            <input id="botao-verificar" type="button" value="Verificar" onclick="clicar()">
+
+        </main>
+
+        <footer> &copy; Roberto Alves</footer>
+
+        <script src="../AULA-TESTE/index.js"></script>
+    
+</body>
+</html>
