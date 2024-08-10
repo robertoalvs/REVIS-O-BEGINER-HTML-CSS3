@@ -14,6 +14,14 @@ h1 {
     margin-bottom: 20px;
 }
 
+p {
+
+    text-align: justify;
+    text-align: center;
+    margin-top: 5px;
+    color: blue;
+}
+
 form {
 
     margin: auto;
@@ -104,6 +112,17 @@ main {
     width: 170px;
     padding: 4px;
     border-radius: 5px;
+}
+
+#ano-atual {
+
+    margin-bottom: 5px;
+}
+
+#genero-masc-fem, #estrangeiro, #res {
+
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 footer {

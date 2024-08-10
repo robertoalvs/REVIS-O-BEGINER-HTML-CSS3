@@ -20,9 +20,11 @@ function clicar() {
     let caixapais = document.querySelector('input#itxtp')
     let caixanascimento = document.querySelector('input#inum')
     let caixaano = document.querySelector('input#inum1')
+    let estrangeiro = document.querySelector('div#estrangeiro')
 
     let nn = String(caixanome.value)
     let np = String(caixapais.value)
+    let est = String(estrangeiro.value)
 
     let n1 = Number(caixanascimento.value)
     let n2 = Number(caixaano.value)
@@ -42,17 +44,38 @@ function clicar() {
     } else if (sexo[0].checked ){
         
         gender = 'MASCULINO'
-        
-    }  if ( somas < 12) {
+
+        if(np != 'Brasil') {
+
+            estrangeiro.innerHTML = 'ESTRANGEIRO'
+
+        } else {
+            estrangeiro.innerHTML = 'BRASILEIRO'
+        }
+
+    }  if ( somas < 12 ) {
 
         fotos.src = '../AULA-TESTE/img copy/bebe-homem.png'
-        resposta.innerHTML = `SEU NOME É: ${caixanome} VOCÊ TEM: ${somas} ANOS`
+        resposta.innerHTML = `<p> SEU NOME É: <strong>${nn}</strong> VOCÊ TEM: ${somas} ANOS e você está no <strong>${np}</strong> </p>`
         mascfem.innerHTML = `<strong>${gender}`
 
     } else if (somas >= 12 && somas < 18 ) {
 
         fotos.src = '../AULA-TESTE/img copy/crianca-homem.png'
-        resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos`
+        resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
         mascfem.innerHTML = `<strong>${gender}`
-    }
+
+    } else if (somas >= 18 && somas < 60) {
+
+        fotos.src = '../AULA-TESTE/img copy/homem-adulto.png'
+        resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+        mascfem.innerHTML = `<strong>${gender}`
+
+    } else {
+
+        fotos.src = '../AULA-TESTE/img copy/idosa-homem.png'
+        resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+        mascfem.innerHTML = `<strong>${gender}`
+
+    } 
 }
