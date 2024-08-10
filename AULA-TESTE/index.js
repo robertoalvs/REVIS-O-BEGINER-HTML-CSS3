@@ -45,7 +45,7 @@ function clicar() {
         
         gender = 'MASCULINO'
 
-        if(np != 'Brasil') {
+        if(np != 'Brasil' && np != 'brasil') {
 
             estrangeiro.innerHTML = 'ESTRANGEIRO'
 
@@ -56,8 +56,8 @@ function clicar() {
     }  if ( somas < 12 ) {
 
         fotos.src = '../AULA-TESTE/img copy/bebe-homem.png'
-        resposta.innerHTML = `<p> SEU NOME É: <strong>${nn}</strong> VOCÊ TEM: ${somas} ANOS e você está no <strong>${np}</strong> </p>`
-        mascfem.innerHTML = `<strong>${gender}`
+        resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas} anos</strong> e você está no <strong>${np}</strong> `
+        mascfem.innerHTML = `<strong>${gender}</strong>`
 
     } else if (somas >= 12 && somas < 18 ) {
 
@@ -77,5 +77,52 @@ function clicar() {
         resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
         mascfem.innerHTML = `<strong>${gender}`
 
+
+
+// CODIGO FEMININO
+
+
+
+    }  if (sexo[1].checked ){
+        
+        gender = 'FEMININO'
+
+        if(np != 'Brasil' && np != 'brasil') {
+
+            estrangeiro.innerHTML = 'ESTRANGEIRO'
+
+        } else {
+            estrangeiro.innerHTML = 'BRASILEIRO'
+        }
+
+        if ( somas < 12 ) {
+
+            fotos.src = '../AULA-TESTE/img copy/bebe-mulher.png'
+            resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas} anos</strong> e você está no <strong>${np}</strong> `
+            mascfem.innerHTML = `<strong>${gender}</strong>`
+    
+        } else if (somas >= 12 && somas < 18 ) {
+    
+            fotos.src = '../AULA-TESTE/img copy/crianca-mulher.png'
+            resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+            mascfem.innerHTML = `<strong>${gender}`
+    
+        } else if (somas >= 18 && somas < 60) {
+    
+            fotos.src = '../AULA-TESTE/img copy/mulher-adulto.png'
+            resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+            mascfem.innerHTML = `<strong>${gender}`
+    
+        } else {
+    
+            fotos.src = '../AULA-TESTE/img copy/idosa-mulher.png'
+            resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+            mascfem.innerHTML = `<strong>${gender}`
+    
+        }  
+
     } 
+    
+
+    
 }
