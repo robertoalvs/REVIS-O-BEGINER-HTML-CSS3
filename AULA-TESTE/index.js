@@ -46,7 +46,7 @@ function clicar() {
     }  if ( somas < 12) {
 
         fotos.src = '../AULA-TESTE/img copy/bebe-homem.png'
-        resposta.innerHTML = `SEU NOME É: ${caixanome} VOCÊ TEM: ${somas} ANOS`
+        resposta.innerHTML = `SEU NOME É: ${nn} VOCÊ TEM: ${somas} ANOS`
         mascfem.innerHTML = `<strong>${gender}`
 
     } else if (somas >= 12 && somas < 18 ) {
