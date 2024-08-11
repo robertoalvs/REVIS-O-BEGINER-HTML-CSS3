@@ -97,7 +97,7 @@ function clicar() {
 
     }  if (sexo[1].checked ){
         
-        gender = 'FEMININO'
+        gender = 'FEMININA'
 
         if(np != 'Brasil' && np != 'brasil') {
 
