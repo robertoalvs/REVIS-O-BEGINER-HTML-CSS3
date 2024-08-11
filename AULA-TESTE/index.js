@@ -21,6 +21,7 @@ function clicar() {
     let caixanascimento = document.querySelector('input#inum')
     let caixaano = document.querySelector('input#inum1')
     let estrangeiro = document.querySelector('div#estrangeiro')
+    let sessao2 = document.getElementById('sessao2')
 
     let nn = String(caixanome.value)
     let np = String(caixapais.value)
@@ -56,25 +57,36 @@ function clicar() {
     }  if ( somas < 12 ) {
 
         fotos.src = '../AULA-TESTE/img copy/bebe-homem.png'
-        resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas} anos</strong> e você está no <strong>${np}</strong> `
+
+        resposta.innerHTML = `<p>&rarr;	Seu nome é: <strong>${nn}</strong></p><p>&rarr; Você tem: <strong>${somas} anos</strong></p> <p>&rarr; Você está no <strong>${np}</strong></p> `
+
         mascfem.innerHTML = `<strong>${gender}</strong>`
+
+        sessao2.style.backgroundImage = 'linear-gradient(to bottom, pink, gray, white)'
+        sessao2.style.boxShadow = '2px 2px 5px black'
 
     } else if (somas >= 12 && somas < 18 ) {
 
         fotos.src = '../AULA-TESTE/img copy/crianca-homem.png'
-        resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+
+        resposta.innerHTML = `<p>&rarr;	Seu nome é: <strong>${nn}</strong></p><p>&rarr; Você tem: <strong>${somas} anos</strong></p> <p>&rarr; Você está no <strong>${np}</strong></p> `
+
         mascfem.innerHTML = `<strong>${gender}`
 
     } else if (somas >= 18 && somas < 60) {
 
         fotos.src = '../AULA-TESTE/img copy/homem-adulto.png'
-        resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+
+        resposta.innerHTML = `<p>&rarr;	Seu nome é: <strong>${nn}</strong></p><p>&rarr; Você tem: <strong>${somas} anos</strong></p> <p>&rarr; Você está no <strong>${np}</strong></p> `
+
         mascfem.innerHTML = `<strong>${gender}`
 
     } else {
 
         fotos.src = '../AULA-TESTE/img copy/idosa-homem.png'
-        resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+
+        resposta.innerHTML = `<p>&rarr;	Seu nome é: <strong>${nn}</strong></p><p>&rarr; Você tem: <strong>${somas} anos</strong></p> <p>&rarr; Você está no <strong>${np}</strong></p> `
+
         mascfem.innerHTML = `<strong>${gender}`
 
 
@@ -89,34 +101,42 @@ function clicar() {
 
         if(np != 'Brasil' && np != 'brasil') {
 
-            estrangeiro.innerHTML = 'ESTRANGEIRO'
+            estrangeiro.innerHTML = 'ESTRANGEIRA'
 
         } else {
-            estrangeiro.innerHTML = 'BRASILEIRO'
+            estrangeiro.innerHTML = 'BRASILEIRA'
         }
 
         if ( somas < 12 ) {
 
             fotos.src = '../AULA-TESTE/img copy/bebe-mulher.png'
-            resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas} anos</strong> e você está no <strong>${np}</strong> `
+
+            resposta.innerHTML = `<p>&rarr;	Seu nome é: <strong>${nn}</strong></p><p>&rarr; Você tem: <strong>${somas} anos</strong></p> <p>&rarr; Você está no <strong>${np}</strong></p> `
+
             mascfem.innerHTML = `<strong>${gender}</strong>`
     
         } else if (somas >= 12 && somas < 18 ) {
     
             fotos.src = '../AULA-TESTE/img copy/crianca-mulher.png'
-            resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+
+            resposta.innerHTML = `<p>&rarr;	Seu nome é: <strong>${nn}</strong></p><p>&rarr; Você tem: <strong>${somas} anos</strong></p> <p>&rarr; Você está no <strong>${np}</strong></p> `
+
             mascfem.innerHTML = `<strong>${gender}`
     
         } else if (somas >= 18 && somas < 60) {
     
             fotos.src = '../AULA-TESTE/img copy/mulher-adulto.png'
-            resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+
+            resposta.innerHTML = `<p>&rarr;	Seu nome é: <strong>${nn}</strong></p><p>&rarr; Você tem: <strong>${somas} anos</strong></p> <p>&rarr; Você está no <strong>${np}</strong></p> `
+
             mascfem.innerHTML = `<strong>${gender}`
     
         } else {
     
             fotos.src = '../AULA-TESTE/img copy/idosa-mulher.png'
-            resposta.innerHTML = `Seu nome é: <strong>${nn}</strong> Você tem: <strong>${somas}</strong> anos e você está no <strong>${np}</strong>`
+
+            resposta.innerHTML = `<p>&rarr;	Seu nome é: <strong>${nn}</strong></p><p>&rarr; Você tem: <strong>${somas} anos</strong></p> <p>&rarr; Você está no <strong>${np}</strong></p> `
+
             mascfem.innerHTML = `<strong>${gender}`
     
         }  
