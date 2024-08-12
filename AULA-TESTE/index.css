@@ -25,10 +25,17 @@ p {
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.372);
 }
 
+
 form {
 
     margin: auto;
     text-align: center;
+}
+
+input:hover {
+
+    background-color: cadetblue;
+    transition: 2s;
 }
 
 #itxtn, #itxtp, #inum, #inum1 {
@@ -95,6 +102,7 @@ main {
 #sessao2:hover {
 
     background-color: rgb(122, 185, 164);
+    box-shadow: 2px 2px 5px white;
     transition: 2s;
 }
 

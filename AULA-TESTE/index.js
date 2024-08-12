@@ -38,7 +38,7 @@ function clicar() {
     let sexo = document.getElementsByName('idsex')
     gender = ''
 
-    if(caixanome.value == 0 || caixapais.value == 0 || caixanascimento.value <= 1899 || caixaano.value > 2024 || caixaano.value == 0) {
+    if(caixanome.value == 0 || caixapais.value == 0 || caixanascimento.value <= 1899 || caixaano.value > 2024 || caixaano.value == 0 ) {
 
         alert('ERRO! VERIFICAR OS DADOS DIGITADOS')
 
