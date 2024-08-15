@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+
+    background-color: rgba(46, 109, 186, 0.753);
+}
+
+#sessao1 {
+
+    margin: auto;
+    background-color: white;
+    width: 500px;
+    padding: 15px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+
+.botao-contar {
+
+    margin-left: 85px;
+    width: 90px;
+}
+
+form {
+
+    background-color: rgb(215, 246, 246);
+    width: 450px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+input {
+
+    margin-bottom: 3px;
+}
+
+label {
+
+    width: 80px;
+    text-align: right;
+    display: inline-block;
+    
+}
+
+#res {
+
+    margin-top: 5px;
+}

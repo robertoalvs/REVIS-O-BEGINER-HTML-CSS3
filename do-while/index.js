@@ -1,19 +1,18 @@
+/*  let c = 1
 
-/*
-while (c <= 10) {
+while (c <= 20) {
 
-    console.log(`Tentando ${c}`)
+    console.log(`Recebendo ${c}`)
     c++
 } 
- 
-    do {
+
+    do  {
 
         console.log(`Testando ${c}`)
         c++
     } while (c <= 10) */
 
+    for (let c = 1; c<= 20; c++) {
 
-    for(let c = 1; c <= 10; c++) {
-
-        console.log(`testando ${c}`)
+        console.log(`Verificando ${c}`)
     }
