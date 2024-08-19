@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'candy_beans';
+    src: url("../AULA-TESTE-DETRAN/fonte/candy_beans/Candy\ Beans.otf") format("truetype");
+}
+
+:root {
+
+    --fonte-local: 'candy_beans';
+
+}
+
+h1 {
+
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+h2 {
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+main {
+
+    
+    background-image: url('../AULA-TESTE-DETRAN/img/360_F_585864419_kgIYUcDQ0yiLOCo1aRjeu7kRxndcoitz.jpg');
+    background-position: center top;
+    background-attachment: fixed;
+    width: 700px;
+    height: 900px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 9px 9px 8px 4px rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    
+}
+
+#sessao1 {
+
+    background-color: rgb(177, 218, 247);
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    box-shadow: 9px 9px 8px 4px rgba(0, 0, 0, 0.37);
+    border-radius: 40px 0 40px ;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    margin-top: 10px;
+    
+}
+
+#hora, #ano {
+
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+    font-family: var(--fonte-local);
+}
+
+#hora > strong, #ano > strong {
+
+    color: red;
+}
+
+#foto-detran {
+
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 250px;
+}
+
+form {
+
+    text-align: center;
+    padding: 20px;
+}
+
+input {
+    margin-bottom: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    
+}
+
+label {
+
+    width: 150px;
+    
+    display: inline-block;
+    text-align: right;
+}
+
+.botao {
+
+    margin-left: 155px;
+    width: 177px;
+}
+
