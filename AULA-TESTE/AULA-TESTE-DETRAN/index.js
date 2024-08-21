@@ -45,25 +45,77 @@ function calcular() {
 
             sexo = 'MASCULINO'
 
-        } if (idade <= 11 || ivel <= 49) {
+        } if (idade <= 11 || ivel <= 49 || ivel >=50) {
 
                 foto.src = '../AULA-TESTE-DETRAN/img/reprovado.png'
                 foto.style.width = '200px'
 
-
-                resposta.innerHTML = `<p> <span>[REPROVADO]!</span> </p> <p>Você tem <strong>${idade}</strong> anos.</p>`
+                resposta.innerHTML = `<p> <span>[REPROVADO]!</span> </p> `
+                resposta.innerHTML += `<p>Seu nome é: <strong>${n}</strong></p>`
+                resposta.innerHTML += `<p>Você tem <strong>${idade}</strong> anos.</p>` 
                 resposta.innerHTML += `<p>Sua velocidade atual foi: <strong>${nivel} KM/h</strong></p>`
                 resposta.innerHTML += `<p>Seu genero é: <strong>${sexo}</strong></p>`
     
-            } else if (idade >=12 || ivel >= 50){
+            } else if (idade >=12 || ivel >= 49){
     
                 foto.src = '../AULA-TESTE-DETRAN/img/aprovado.png'
-                resposta.innerHTML = `<p>[APROVADO]!</p> <p>Você tem <strong>${idade}</strong> anos.</p>`
+                resposta.innerHTML = `<p> <span class="aprovado"> [APROVADO]!</span> </p> `
+                resposta.innerHTML += `<p>Seu nome é: <strong>${n}</strong></p>`
+                resposta.innerHTML += `<p>Você tem <strong>${idade}</strong> anos.</p>` 
                 resposta.innerHTML += `<p>Sua velocidade atual foi: <strong>${nivel} KM/h</strong></p>`
                 resposta.innerHTML += `<p>Seu genero é: <strong>${sexo}</strong></p>`
-            }
 
+
+            } else {  
     
-}
+                foto.src = '../AULA-TESTE-DETRAN/img/reprovado.png'
+                foto.style.width = '200px'
+                resposta.innerHTML = `<p> <span>[REPROVADO]!</span> </p> `
+                resposta.innerHTML += `<p>Seu nome é: <strong>${n}</strong></p>`
+                resposta.innerHTML += `<p>Você tem <strong>${idade}</strong> anos.</p>` 
+                resposta.innerHTML += `<p>Sua velocidade atual foi: <strong>${nivel} KM/h</strong></p>`
+                resposta.innerHTML += `<p>Seu genero é: <strong>${sexo}</strong></p>`
+        
+             } 
+            
+             // CODIGO FEMININO
 
+             
+             if (genero[1].checked) {
 
+                sexo = 'FEMININO'
+    
+            } if (idade <= 11 || ivel <= 49 || ivel >=50) {
+    
+                    foto.src = '../AULA-TESTE-DETRAN/img/reprovado.png'
+                    foto.style.width = '200px'
+    
+                    resposta.innerHTML = `<p> <span>[REPROVADO]!</span> </p> `
+                    resposta.innerHTML += `<p>Seu nome é: <strong>${n}</strong></p>`
+                    resposta.innerHTML += `<p>Você tem <strong>${idade}</strong> anos.</p>` 
+                    resposta.innerHTML += `<p>Sua velocidade atual foi: <strong>${nivel} KM/h</strong></p>`
+                    resposta.innerHTML += `<p>Seu genero é: <strong>${sexo}</strong></p>`
+        
+                } else if (idade >=12 || ivel >= 49){
+        
+                    foto.src = '../AULA-TESTE-DETRAN/img/aprovado.png'
+                    resposta.innerHTML = `<p> <span class="aprovado"> [APROVADO]!</span> </p> `
+                    resposta.innerHTML += `<p>Seu nome é: <strong>${n}</strong></p>`
+                    resposta.innerHTML += `<p>Você tem <strong>${idade}</strong> anos.</p>` 
+                    resposta.innerHTML += `<p>Sua velocidade atual foi: <strong>${nivel} KM/h</strong></p>`
+                    resposta.innerHTML += `<p>Seu genero é: <strong>${sexo}</strong></p>`
+    
+    
+                } else {  
+        
+                    foto.src = '../AULA-TESTE-DETRAN/img/reprovado.png'
+                    foto.style.width = '200px'
+                    resposta.innerHTML = `<p> <span>[REPROVADO]!</span> </p> `
+                    resposta.innerHTML += `<p>Seu nome é: <strong>${n}</strong></p>`
+                    resposta.innerHTML += `<p>Você tem <strong>${idade}</strong> anos.</p>` 
+                    resposta.innerHTML += `<p>Sua velocidade atual foi: <strong>${nivel} KM/h</strong></p>`
+                    resposta.innerHTML += `<p>Seu genero é: <strong>${sexo}</strong></p>`
+                
+    
+                 } 
+    }
