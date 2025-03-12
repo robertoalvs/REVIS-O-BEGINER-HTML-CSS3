@@ -37,7 +37,7 @@ function calcular() {
 
 
 
-    if (nome.value.length == 0 || iano.value.length == 0 || iano.value <= 1899 || iano.value >= 2025 || ivel.value.length == 0) {
+    if (nome.value.length == 0 || iano.value.length == 0 || iano.value <= 1899 || iano.value >= 2030 || ivel.value.length == 0) {
 
         alert('[ERRO!] VERIFIQUE OS DADOS DIGITADOS!')
 
